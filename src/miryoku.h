@@ -22,29 +22,33 @@
   #define U_CPY copy
   #define U_CUT cut
   #define U_UND undo
+  #define U_SCRNSHT prnt
 #elif defined (MIRYOKU_CLIPBOARD_MAC)
   #define U_RDO S-M-z
   #define U_PST M-v
   #define U_CPY M-c
   #define U_CUT M-x
   #define U_UND M-z
+  #define U_SCRNSHT M-S-1
 #elif defined (MIRYOKU_CLIPBOARD_WIN)
   #define U_RDO C-y
   #define U_PST C-v
   #define U_CPY C-c
   #define U_CUT C-x
   #define U_UND C-z
+  #define U_SCRNSHT prnt
 #else
   #define U_RDO again
   #define U_PST S-ins
   #define U_CPY C-ins
   #define U_CUT S-del
   #define U_UND undo
+  #define U_SCRNSHT prnt
 #endif
 
-#define U_MT(TAP, HOLD) (tap-hold-next-release U_TAPPING_TERM TAP HOLD)
-#define U_LT(TAP, HOLD) (tap-hold-next-release U_TAPPING_TERM TAP (layer-toggle HOLD))
-#define U_DF(LAYER) (multi-tap U_TAPPING_TERM XX (layer-switch LAYER))
+#define U_MT(TAP, HOLD) (tap-hold-release U_TAPPING_TERM U_TAPPING_TERM TAP HOLD)
+#define U_LT(TAP, HOLD) (tap-hold-release U_TAPPING_TERM U_TAPPING_TERM TAP (layer-while-held HOLD))
+#define U_DF(LAYER) (tap-dance U_TAPPING_TERM (XX (layer-switch LAYER)))
 
 #define MIRYOKU_MAPPING_MAIN( \
   K00,      K01,      K02,      K03,      K04,      K05,      K06,      K07,      K08,      K09, \
@@ -64,10 +68,10 @@
   #define MIRYOKU_MAPPING MIRYOKU_MAPPING_MAIN
 #endif
 
-#if !defined (MIRYOKU_KMONAD_KEYBOARD_LINUX)
-  #define MIRYOKU_KMONAD_KEYBOARD_LINUX "keyboard"
+#if !defined (MIRYOKU_KANATA_KEYBOARD_LINUX)
+  #define MIRYOKU_KANATA_KEYBOARD_LINUX "keyboard"
 #endif
 
-#if !defined (MIRYOKU_KMONAD_KEYBOARD_MAC)
-  #define MIRYOKU_KMONAD_KEYBOARD_MAC
+#if !defined (MIRYOKU_KANATA_KEYBOARD_MAC)
+  #define MIRYOKU_KANATA_KEYBOARD_MAC
 #endif
