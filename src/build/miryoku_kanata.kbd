@@ -32,19 +32,19 @@ z	x	c	d	v	k	h	,	.	/
 		esc	spc	tab	ent	bspc	del
 )
 (deflayer U_BUTTON
-C-z	C-x	C-c	C-v	C-y	C-y	C-v	C-c	C-x	C-z
+M-z	M-x	M-c	M-v	S-M-z	S-M-z	M-v	M-c	M-x	M-z
 met	alt	ctl	sft	XX	XX	sft	ctl	alt	met
-C-z	C-x	C-c	C-v	C-y	C-y	C-v	C-c	C-x	C-z
+M-z	M-x	M-c	M-v	S-M-z	S-M-z	M-v	M-c	M-x	M-z
 		mmid	mlft	mrgt	mrgt	mlft	mmid
 )
 (deflayer U_NAV
-XX	(tap-dance 200 (XX (layer-switch U_TAP)))	(tap-dance 200 (XX (layer-switch U_EXTRA)))	(tap-dance 200 (XX (layer-switch U_BASE)))	XX	C-y	C-v	C-c	C-x	C-z
+XX	(tap-dance 200 (XX (layer-switch U_TAP)))	(tap-dance 200 (XX (layer-switch U_EXTRA)))	(tap-dance 200 (XX (layer-switch U_BASE)))	XX	S-M-z	M-v	M-c	M-x	M-z
 met	alt	ctl	sft	XX	caps	left	down	up	right
 XX	ralt	(tap-dance 200 (XX (layer-switch U_NUM)))	(tap-dance 200 (XX (layer-switch U_NAV)))	XX	ins	home	pgdn	pgup	end
 		XX	XX	XX	ent	bspc	del
 )
 (deflayer U_MOUSE
-XX	(tap-dance 200 (XX (layer-switch U_TAP)))	(tap-dance 200 (XX (layer-switch U_EXTRA)))	(tap-dance 200 (XX (layer-switch U_BASE)))	XX	C-y	C-v	C-c	C-x	C-z
+XX	(tap-dance 200 (XX (layer-switch U_TAP)))	(tap-dance 200 (XX (layer-switch U_EXTRA)))	(tap-dance 200 (XX (layer-switch U_BASE)))	XX	S-M-z	M-v	M-c	M-x	M-z
 met	alt	ctl	sft	XX	XX	kp4	kp2	kp8	kp6
 XX	ralt	(tap-dance 200 (XX (layer-switch U_SYM)))	(tap-dance 200 (XX (layer-switch U_MOUSE)))	XX	XX	XX	XX	XX	XX
 		XX	XX	XX	mrgt	mlft	mmid
@@ -68,7 +68,7 @@ S-`	S-1	S-2	S-3	S-\	XX	(tap-dance 200 (XX (layer-switch U_SYM)))	(tap-dance 200 
 		S-9	S-0	S--	XX	XX	XX
 )
 (deflayer U_FUN
-f12	f7	f8	f9	prnt	XX	(tap-dance 200 (XX (layer-switch U_BASE)))	(tap-dance 200 (XX (layer-switch U_EXTRA)))	(tap-dance 200 (XX (layer-switch U_TAP)))	XX
+f12	f7	f8	f9	M-S-1	XX	(tap-dance 200 (XX (layer-switch U_BASE)))	(tap-dance 200 (XX (layer-switch U_EXTRA)))	(tap-dance 200 (XX (layer-switch U_TAP)))	XX
 f11	f4	f5	f6	slck	XX	sft	ctl	alt	met
 f10	f1	f2	f3	pause	XX	(tap-dance 200 (XX (layer-switch U_FUN)))	(tap-dance 200 (XX (layer-switch U_MEDIA)))	ralt	XX
 		comp	spc	tab	XX	XX	XX
