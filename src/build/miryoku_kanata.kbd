@@ -8,15 +8,15 @@
 (defcfg
 )
 (defsrc
-  2 3 4 5 6 8 9 0 - =
-  q w e r t i o p [ ]
+  grv 1 2 3 4 8 9 0 - =
+  tab q w e r i o p [ ]
   caps a s d f k l ; ' ent
-                x c v , . /
+                z x c , . /
 )
 (deflayer U_BASE
-q	w	f	p	b	j	l	u	y	'
-(tap-hold-release 200 200 a met)	(tap-hold-release 200 200 r alt)	(tap-hold-release 200 200 s ctl)	(tap-hold-release 200 200 t sft)	g	m	(tap-hold-release 200 200 n sft)	(tap-hold-release 200 200 e ctl)	(tap-hold-release 200 200 i alt)	(tap-hold-release 200 200 o met)
-(tap-hold-release 200 200 z (layer-while-held U_BUTTON))	(tap-hold-release 200 200 x ralt)	c	d	v	k	h	,	(tap-hold-release 200 200 . ralt)	(tap-hold-release 200 200 / (layer-while-held U_BUTTON))
+q	w	f	p	g	j	l	u	y	'
+(tap-hold-release 200 200 a met)	(tap-hold-release 200 200 r alt)	(tap-hold-release 200 200 s ctl)	(tap-hold-release 200 200 t sft)	d	h	(tap-hold-release 200 200 n sft)	(tap-hold-release 200 200 e ctl)	(tap-hold-release 200 200 i alt)	(tap-hold-release 200 200 o met)
+(tap-hold-release 200 200 z (layer-while-held U_BUTTON))	(tap-hold-release 200 200 x ralt)	c	v	b	k	m	,	(tap-hold-release 200 200 . ralt)	(tap-hold-release 200 200 / (layer-while-held U_BUTTON))
 		(tap-hold-release 200 200 esc (layer-while-held U_MEDIA))	(tap-hold-release 200 200 spc (layer-while-held U_NAV))	(tap-hold-release 200 200 tab (layer-while-held U_MOUSE))	(tap-hold-release 200 200 ent (layer-while-held U_SYM))	(tap-hold-release 200 200 bspc (layer-while-held U_NUM))	(tap-hold-release 200 200 del (layer-while-held U_FUN))
 )
 (deflayer U_EXTRA
@@ -26,9 +26,9 @@ q	w	e	r	t	y	u	i	o	p
 		(tap-hold-release 200 200 esc (layer-while-held U_MEDIA))	(tap-hold-release 200 200 spc (layer-while-held U_NAV))	(tap-hold-release 200 200 tab (layer-while-held U_MOUSE))	(tap-hold-release 200 200 ent (layer-while-held U_SYM))	(tap-hold-release 200 200 bspc (layer-while-held U_NUM))	(tap-hold-release 200 200 del (layer-while-held U_FUN))
 )
 (deflayer U_TAP
-q	w	f	p	b	j	l	u	y	'
-a	r	s	t	g	m	n	e	i	o
-z	x	c	d	v	k	h	,	.	/
+q	w	f	p	g	j	l	u	y	'
+a	r	s	t	d	h	n	e	i	o
+z	x	c	v	b	k	m	,	.	/
 		esc	spc	tab	ent	bspc	del
 )
 (deflayer U_BUTTON
@@ -39,7 +39,7 @@ M-z	M-x	M-c	M-v	S-M-z	S-M-z	M-v	M-c	M-x	M-z
 )
 (deflayer U_NAV
 XX	(tap-dance 200 (XX (layer-switch U_TAP)))	(tap-dance 200 (XX (layer-switch U_EXTRA)))	(tap-dance 200 (XX (layer-switch U_BASE)))	XX	S-M-z	M-v	M-c	M-x	M-z
-met	alt	ctl	sft	XX	caps	left	down	up	right
+met	alt	ctl	sft	XX	(caps-word-toggle 5000)	left	down	up	right
 XX	ralt	(tap-dance 200 (XX (layer-switch U_NUM)))	(tap-dance 200 (XX (layer-switch U_NAV)))	XX	ins	home	pgdn	pgup	end
 		XX	XX	XX	ent	bspc	del
 )
