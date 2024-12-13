@@ -16,6 +16,8 @@
 
 #define U_TAPPING_TERM 200
 
+#define U_CAPSWORD (caps-word-toggle 5000)
+
 #if defined (MIRYOKU_CLIPBOARD_FUN)
   #define U_RDO again
   #define U_PST paste

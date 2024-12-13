@@ -250,31 +250,31 @@ U_NP,              U_NP,              esc,               spc,               tab,
 
 #define MIRYOKU_ALTERNATIVES_NAV_INVERTEDT_FLIP \
 pgup,              home,              up,                end,               ins,               U_NA,              U_DF(U_BASE),      U_DF(U_EXTRA),     U_DF(U_TAP),       U_NA,              \
-pgdn,              left,              down,              right,             caps,              U_NA,              sft,               ctl,               alt,               met,               \
+pgdn,              left,              down,              right,             U_CAPSWORD,        U_NA,              sft,               ctl,               alt,               met,               \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_NA,              U_DF(U_NAV),       U_DF(U_NUM),       ralt,              U_NA,              \
 U_NP,              U_NP,              del,               bspc,              ent,               U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_NAV_FLIP \
 home,              pgdn,              pgup,              end,               ins,               U_NA,              U_DF(U_BASE),      U_DF(U_EXTRA),     U_DF(U_TAP),       U_NA,              \
-left,              down,              up,                right,             caps,              U_NA,              sft,               ctl,               alt,               met,               \
+left,              down,              up,                right,             U_CAPSWORD,        U_NA,              sft,               ctl,               alt,               met,               \
 U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_NA,              U_DF(U_NAV),       U_DF(U_NUM),       ralt,              U_NA,              \
 U_NP,              U_NP,              del,               bspc,              ent,               U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_NAV_INVERTEDT \
 U_NA,              U_DF(U_TAP),       U_DF(U_EXTRA),     U_DF(U_BASE),      U_NA,              ins,               home,              up,                end,               pgup,              \
-met,               alt,               ctl,               sft,               U_NA,              caps,              left,              down,              right,             pgdn,              \
+met,               alt,               ctl,               sft,               U_NA,              U_CAPSWORD,        left,              down,              right,             pgdn,              \
 U_NA,              ralt,              U_DF(U_NUM),       U_DF(U_NAV),       U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              ent,               bspc,              del,               U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_NAV_VI \
 U_NA,              U_DF(U_TAP),       U_DF(U_EXTRA),     U_DF(U_BASE),      U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-met,               alt,               ctl,               sft,               U_NA,              left,              down,              up,                right,             caps,              \
+met,               alt,               ctl,               sft,               U_NA,              left,              down,              up,                right,             U_CAPSWORD,        \
 U_NA,              ralt,              U_DF(U_NUM),       U_DF(U_NAV),       U_NA,              home,              pgdn,              pgup,              end,               ins,               \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              ent,               bspc,              del,               U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_NAV \
 U_NA,              U_DF(U_TAP),       U_DF(U_EXTRA),     U_DF(U_BASE),      U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-met,               alt,               ctl,               sft,               U_NA,              caps,              left,              down,              up,                right,             \
+met,               alt,               ctl,               sft,               U_NA,              U_CAPSWORD,        left,              down,              up,                right,             \
 U_NA,              ralt,              U_DF(U_NUM),       U_DF(U_NAV),       U_NA,              ins,               home,              pgdn,              pgup,              end,               \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              ent,               bspc,              del,               U_NP,              U_NP
 
