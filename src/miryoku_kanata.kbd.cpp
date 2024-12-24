@@ -4,9 +4,8 @@
 #include "miryoku.h"
 
 (defcfg
-#if defined (MIRYOKU_MAPPING_LITE)
   process-unmapped-keys yes
-#endif
+  block-unmapped-keys yes
 )
 
 (defsrc
