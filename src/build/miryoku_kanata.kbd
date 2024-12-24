@@ -6,6 +6,8 @@
        
        
 (defcfg
+  process-unmapped-keys yes
+  block-unmapped-keys yes
 )
 (defsrc
   grv 1 2 3 4 8 9 0 - =
